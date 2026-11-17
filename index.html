@@ -1,0 +1,496 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Labo Nedjma — Laboratoires cosmétiques algériens</title>
+  <meta name="description" content="Labo Nedjma, laboratoires cosmétiques algériens. Héritage parfumeur depuis 1963. Marques Flux Care, Flux Care Men Edition et Flux de Passion : soins capillaires, visage, corps, déodorants et colognes." />
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=DM+Sans:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+
+<!-- ================= HEADER ================= -->
+<div class="topbar">
+  <div class="container topbar-inner">
+    <p class="topbar-tag"><span class="star">★</span> <span class="hide-sm">Héritage parfumeur depuis 1963 · </span>Fabriqué en Algérie</p>
+    <div class="topbar-links">
+      <a href="tel:+21323920293" class="hide-sm">+213 23 92 02 93</a>
+      <a href="mailto:commercial@labo-nedjma.com" class="hide-sm">commercial@labo-nedjma.com</a>
+      <a href="contact.html#b2b" class="hide-sm">Espace Pro</a>
+      <div class="lang" aria-label="Langue">
+        <a href="#" class="is-active">FR</a><a href="#">EN</a><a href="#" lang="ar">ع</a>
+      </div>
+    </div>
+  </div>
+</div>
+
+<header class="site-header" data-header>
+  <div class="container header-inner">
+    <a href="index.html" class="brand" aria-label="Labo Nedjma, accueil">
+      <img src="assets/logos/labo-nedjma.png" alt="Labo Nedjma — Laboratoires cosmétiques" width="200" height="60">
+    </a>
+
+    <nav class="nav" aria-label="Navigation principale">
+      <a href="index.html" class="nav-link is-active">Accueil</a>
+      <a href="groupe.html" class="nav-link">Le Groupe</a>
+      <div class="nav-item has-mega">
+        <button class="nav-link" type="button" aria-expanded="false" aria-controls="mega-marques">
+          Nos marques
+          <svg viewBox="0 0 12 12" aria-hidden="true"><path d="M2.5 4.5 6 8l3.5-3.5" fill="none" stroke="currentColor" stroke-width="1.6"/></svg>
+        </button>
+        <div class="mega" id="mega-marques">
+          <div class="container mega-inner">
+            <a href="flux-care.html" class="mega-brand mb-care">
+              <span class="mega-img"><img src="assets/img/marque-flux-care.jpg" alt="" loading="lazy"></span>
+              <img class="mega-logo" src="assets/logos/flux-care.png" alt="Flux Care">
+              <span class="mega-txt">Soin capillaire, visage et hygiène. Un soin précis pour chaque besoin.</span>
+            </a>
+            <a href="flux-care-men.html" class="mega-brand mb-men">
+              <span class="mega-img"><img src="assets/img/marque-flux-care-men.jpg" alt="" loading="lazy"></span>
+              <img class="mega-logo" src="assets/logos/flux-care-men.png" alt="Flux Care Men Edition">
+              <span class="mega-txt">La gamme masculine : douche, cheveux, visage et déodorants.</span>
+            </a>
+            <a href="flux-de-passion.html" class="mega-brand mb-passion">
+              <span class="mega-img"><img src="assets/img/marque-flux-de-passion.jpg" alt="" loading="lazy"></span>
+              <img class="mega-logo" src="assets/logos/flux-de-passion.png" alt="Flux de Passion">
+              <span class="mega-txt">Le soin de soi, à la portée de tous : colognes, savons, gels douche.</span>
+            </a>
+            <div class="mega-side">
+              <p class="mega-title">Toutes nos marques</p>
+              <a href="marques.html">Flux Care</a>
+              <a href="marques.html">Flux Care Men Edition</a>
+              <a href="marques.html">Flux de Passion</a>
+              <a href="marques.html">Flux de Passion Homme</a>
+              <a href="marques.html">Dakkar · Dolfino · Pacific</a>
+              <a href="marques.html" class="mega-all">Voir le portefeuille →</a>
+            </div>
+          </div>
+        </div>
+      </div>
+      <a href="produits.html" class="nav-link">Produits</a>
+      <a href="groupe.html#savoirfaire" class="nav-link">Savoir-faire</a>
+      <a href="blog.html" class="nav-link">Magazine</a>
+      <a href="carriere.html" class="nav-link">Carrière</a>
+      <a href="contact.html" class="nav-link">Contact</a>
+    </nav>
+
+    <div class="header-actions">
+      <button class="icon-btn" type="button" aria-label="Rechercher" data-search-open>
+        <svg viewBox="0 0 24 24" aria-hidden="true"><circle cx="11" cy="11" r="7" fill="none" stroke="currentColor" stroke-width="1.7"/><path d="m20 20-3.6-3.6" stroke="currentColor" stroke-width="1.7" fill="none"/></svg>
+      </button>
+      <a href="contact.html#b2b" class="btn btn-primary btn-sm hide-md">Devenir distributeur</a>
+      <button class="burger" type="button" aria-label="Ouvrir le menu" aria-expanded="false" data-burger><span></span><span></span><span></span></button>
+    </div>
+  </div>
+
+  <!-- Search -->
+  <div class="search-panel" data-search>
+    <form class="container search-form" action="produits.html">
+      <input type="search" name="q" placeholder="Rechercher un produit, une gamme, une marque…" aria-label="Rechercher">
+      <button class="btn btn-primary" type="submit">Rechercher</button>
+      <button class="icon-btn" type="button" aria-label="Fermer" data-search-close>✕</button>
+    </form>
+  </div>
+</header>
+
+<!-- Mobile drawer -->
+<div class="drawer" data-drawer aria-hidden="true">
+  <div class="drawer-panel">
+    <div class="drawer-head">
+      <img src="assets/logos/labo-nedjma.png" alt="Labo Nedjma" width="150">
+      <button class="icon-btn" type="button" aria-label="Fermer le menu" data-drawer-close>✕</button>
+    </div>
+    <nav class="drawer-nav">
+      <a href="index.html" class="is-active">Accueil</a>
+      <a href="groupe.html">Le Groupe</a>
+      <details>
+        <summary>Nos marques</summary>
+        <a href="flux-care.html"><img src="assets/logos/flux-care.png" alt="">Flux Care</a>
+        <a href="flux-care-men.html"><img src="assets/logos/flux-care-men.png" alt="">Flux Care Men Edition</a>
+        <a href="flux-de-passion.html"><img src="assets/logos/flux-de-passion.png" alt="">Flux de Passion</a>
+        <a href="marques.html">Toutes nos marques →</a>
+      </details>
+      <a href="produits.html">Produits</a>
+      <a href="groupe.html#savoirfaire">Savoir-faire</a>
+      <a href="blog.html">Magazine</a>
+      <a href="carriere.html">Carrière</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+    <a href="contact.html#b2b" class="btn btn-primary btn-block">Devenir distributeur</a>
+    <a href="contact.html#b2b" class="btn btn-ghost btn-block">Espace Pro</a>
+    <p class="drawer-contact">commercial@labo-nedjma.com<br>+213 23 92 02 93</p>
+  </div>
+</div>
+
+<main>
+
+<!-- ================= HERO SLIDER ================= -->
+<section class="hero" data-slider data-theme="light" aria-roledescription="carrousel" aria-label="À la une">
+  <div class="hero-slides">
+
+    <article class="hero-slide is-active" data-theme="light" aria-label="1 sur 3">
+      <div class="hero-bg" style="--pos: 40% 35%; --pos-m: 58% 30%"><img src="assets/img/hero-1.jpg" alt="Femme appliquant une crème de soin sur son visage"></div>
+      <div class="container hero-content">
+        <p class="hero-kicker"><span></span>Maison fondée en 1963</p>
+        <h1 class="hero-title"><span class="line"><span>L'excellence cosmétique</span></span><span class="line"><span><em>algérienne</em>.</span></span></h1>
+        <p class="hero-text">Trois générations de savoir-faire au service de la beauté et du soin, au quotidien.</p>
+        <div class="hero-cta">
+          <a href="groupe.html" class="btn btn-primary">Découvrir la maison</a>
+          <a href="marques.html" class="link-arrow">Nos marques <span>→</span></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="hero-slide" data-theme="light" aria-label="2 sur 3" aria-hidden="true">
+      <div class="hero-bg" style="--pos: 100% 30%; --pos-m: 92% 30%"><img src="assets/img/hero-2.jpg" alt="Une famille en peignoirs partage un moment de soin du visage à la maison" loading="lazy"></div>
+      <div class="container hero-content">
+        <p class="hero-kicker"><span></span>Nos marques</p>
+        <h2 class="hero-title"><span class="line"><span>Des marques pour</span></span><span class="line"><span><em>toute la famille</em>.</span></span></h2>
+        <p class="hero-text">Pour elle, pour lui, pour toute la famille : soins capillaires, visage et corps, hygiène, déodorants et parfums.</p>
+        <div class="hero-cta">
+          <a href="marques.html" class="btn btn-primary">Découvrir nos marques</a>
+          <a href="produits.html" class="link-arrow">Voir les produits <span>→</span></a>
+        </div>
+      </div>
+    </article>
+
+    <article class="hero-slide" data-theme="dark" aria-label="3 sur 3" aria-hidden="true">
+      <div class="hero-bg" style="--pos: 100% 60%; --pos-m: 66% 62%"><img src="assets/img/hero-3.jpg" alt="Produits Labo Nedjma sur une pierre" loading="lazy"></div>
+      <div class="container hero-content">
+        <p class="hero-kicker"><span></span>Fabriqué en Algérie</p>
+        <h2 class="hero-title"><span class="line"><span>Formulé, fabriqué</span></span><span class="line"><span>et <em>conditionné chez nous</em>.</span></span></h2>
+        <p class="hero-text">De la formule au flacon, chaque produit est contrôlé dans nos laboratoires avant d'arriver chez vous.</p>
+        <div class="hero-cta">
+          <a href="groupe.html#savoirfaire" class="btn btn-gold">Notre savoir-faire</a>
+          <a href="contact.html#b2b" class="link-arrow">Devenir distributeur <span>→</span></a>
+        </div>
+      </div>
+    </article>
+
+  </div>
+
+  <div class="hero-tabs">
+    <div class="container hero-tabs-inner">
+      <button type="button" class="hero-tab is-active" aria-label="Slide 1 : Héritage"><span class="ht-bar"><i></i></span><span class="ht-label">Héritage</span></button>
+      <button type="button" class="hero-tab" aria-label="Slide 2 : Nos marques"><span class="ht-bar"><i></i></span><span class="ht-label">Nos marques</span></button>
+      <button type="button" class="hero-tab" aria-label="Slide 3 : Savoir-faire"><span class="ht-bar"><i></i></span><span class="ht-label">Savoir-faire</span></button>
+    </div>
+  </div>
+</section>
+
+<!-- ================= LOGO STRIP ================= -->
+<section class="logo-strip" aria-label="Nos marques">
+  <div class="logo-track">
+    <div class="logo-set">
+      <img src="assets/logos/flux-care.png" alt="Flux Care">
+      <img src="assets/logos/flux-care-men.png" alt="Flux Care Men Edition">
+      <img src="assets/logos/flux-de-passion.png" alt="Flux de Passion">
+      <img src="assets/logos/flux-de-passion-homme.png" alt="Flux de Passion Homme">
+      <img src="assets/logos/dakkar.png" alt="Dakkar">
+      <img src="assets/logos/dolfino.png" alt="Dolfino">
+      <img src="assets/logos/pacific.png" alt="Pacific">
+    </div>
+    <div class="logo-set" aria-hidden="true">
+      <img src="assets/logos/flux-care.png" alt="">
+      <img src="assets/logos/flux-care-men.png" alt="">
+      <img src="assets/logos/flux-de-passion.png" alt="">
+      <img src="assets/logos/flux-de-passion-homme.png" alt="">
+      <img src="assets/logos/dakkar.png" alt="">
+      <img src="assets/logos/dolfino.png" alt="">
+      <img src="assets/logos/pacific.png" alt="">
+    </div>
+  </div>
+</section>
+
+<!-- ================= ABOUT ================= -->
+<section class="section about">
+  <div class="container about-grid">
+    <div class="about-collage reveal">
+      <img class="ac-1" src="assets/img/about-1.jpg" alt="Femme souriante, univers Flux Care" loading="lazy">
+      <img class="ac-2" src="assets/img/about-2.jpg" alt="Jeune femme avec un soin Flux de Passion" loading="lazy">
+      <img class="ac-3" src="assets/img/about-3.jpg" alt="Homme souriant, univers Flux Care Men" loading="lazy">
+      <div class="ac-badge"><strong>1963</strong><span>Héritage<br>parfumeur</span></div>
+    </div>
+    <div class="about-copy reveal">
+      <span class="eyebrow">La maison Labo Nedjma</span>
+      <h2>Une maison familiale devenue un acteur majeur de la cosmétique algérienne.</h2>
+      <p>Labo Nedjma a été fondé par <strong>M. Abdelhamid Guemari</strong>, fort de plus de 40 ans d'expérience dans la cosmétique et fils du parfumeur <strong>El Hadj Tahar Guemari</strong>, actif depuis 1963.</p>
+      <p>Aujourd'hui, une équipe d'experts couvre tous les segments du marché : soins capillaires, hygiène corporelle, savons, parfums et eaux de Cologne, produits pour bébé. Nos produits sont distribués dans toute l'Algérie et exportés à l'international.</p>
+      <ul class="checks">
+        <li>Formulation, fabrication et conditionnement en Algérie</li>
+        <li>Unité de plasturgie intégrée pour nos flacons</li>
+        <li>Des prix pensés pour le consommateur algérien</li>
+      </ul>
+      <a href="groupe.html" class="btn btn-primary">Découvrir le groupe</a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= BRANDS ================= -->
+<section class="section brands" id="marques">
+  <div class="container">
+    <div class="section-head reveal">
+      <span class="eyebrow">Nos marques</span>
+      <h2>Trois marques, un même savoir-faire.</h2>
+      <p>Chaque marque a son univers, son ton et son exigence. Toutes partagent la même rigueur de formulation et de production.</p>
+    </div>
+
+    <div class="brand-grid">
+      <article class="brand-card bc-care reveal">
+        <div class="bc-media"><img src="assets/img/marque-flux-care.jpg" alt="Quatre femmes souriantes, campagne Flux Care" loading="lazy"></div>
+        <div class="bc-body">
+          <img class="bc-logo" src="assets/logos/flux-care.png" alt="Flux Care — Secret de soin">
+          <p class="bc-quote">« Offrir à chaque femme un soin précis pour chaque besoin. »</p>
+          <ul class="bc-tags"><li>Hair Care</li><li>Skin Care</li><li>Hygiène</li></ul>
+          <a href="flux-care.html" class="bc-link">Découvrir Flux Care <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="brand-card bc-men reveal">
+        <div class="bc-media"><img src="assets/img/marque-flux-care-men.jpg" alt="Quatre hommes, campagne Flux Care Men" loading="lazy"></div>
+        <div class="bc-body">
+          <img class="bc-logo" src="assets/logos/flux-care-men.png" alt="Flux Care Men Edition">
+          <p class="bc-quote bc-quote--men">Authentique. Confiant. Élégant. Ambitieux.</p>
+          <ul class="bc-tags"><li>Gel douche</li><li>Shampooing</li><li>Visage</li><li>Déodorants</li></ul>
+          <a href="flux-care-men.html" class="bc-link">Découvrir Flux Care Men <span>→</span></a>
+        </div>
+      </article>
+
+      <article class="brand-card bc-passion reveal">
+        <div class="bc-media"><img src="assets/img/marque-flux-de-passion.jpg" alt="Jeune femme avec un shampooing Flux de Passion" loading="lazy"></div>
+        <div class="bc-body">
+          <img class="bc-logo" src="assets/logos/flux-de-passion.png" alt="Flux de Passion">
+          <p class="bc-quote bc-quote--passion">Le soin de soi, à la portée de tous.</p>
+          <ul class="bc-tags"><li>Colognes</li><li>Savons</li><li>Gels douche</li><li>Crèmes</li></ul>
+          <a href="flux-de-passion.html" class="bc-link">Découvrir Flux de Passion <span>→</span></a>
+        </div>
+      </article>
+    </div>
+
+    <div class="other-brands reveal">
+      <p>Le groupe, c'est aussi</p>
+      <div class="ob-logos">
+        <img src="assets/logos/flux-de-passion-homme.png" alt="Flux de Passion Homme" loading="lazy">
+        <img src="assets/logos/dakkar.png" alt="Dakkar" loading="lazy">
+        <img src="assets/logos/dolfino.png" alt="Dolfino" loading="lazy">
+        <img src="assets/logos/pacific.png" alt="Pacific" loading="lazy">
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= CATEGORIES ================= -->
+<section class="section categories-sec">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <span class="eyebrow">Nos univers</span>
+        <h2>Le soin du quotidien, de la tête aux pieds.</h2>
+      </div>
+      <a href="produits.html" class="btn btn-ghost">Tous les produits →</a>
+    </div>
+
+    <div class="cat-grid">
+      <a href="produits.html?cat=cheveux" class="cat cat-tall reveal">
+        <img src="assets/img/cat-capillaire.jpg" alt="" loading="lazy">
+        <span class="cat-label"><small>Flux Care · Flux de Passion</small>Soins capillaires</span>
+      </a>
+      <a href="produits.html?cat=visage" class="cat reveal">
+        <img src="assets/img/cat-visage.jpg" alt="" loading="lazy">
+        <span class="cat-label"><small>Flux Care</small>Soin du visage</span>
+      </a>
+      <a href="produits.html?cat=corps" class="cat reveal">
+        <img src="assets/img/cat-douche.jpg" alt="" loading="lazy">
+        <span class="cat-label"><small>Gels douche · Savons</small>Bain &amp; corps</span>
+      </a>
+      <a href="produits.html?cat=deodorants" class="cat reveal">
+        <img src="assets/img/cat-deodorants.jpg" alt="" loading="lazy">
+        <span class="cat-label"><small>Spray · Stick · Roll-on</small>Déodorants</span>
+      </a>
+      <a href="produits.html?cat=homme" class="cat reveal">
+        <img src="assets/img/cat-homme.jpg" alt="" loading="lazy">
+        <span class="cat-label"><small>Flux Care Men · Homme</small>Soins homme</span>
+      </a>
+      <a href="produits.html?cat=parfum" class="cat cat-wide reveal">
+        <img src="assets/img/cat-colognes.jpg" alt="" loading="lazy">
+        <span class="cat-label"><small>Flux de Passion · Pacific</small>Eaux de Cologne &amp; parfums</span>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= STATS ================= -->
+<section class="stats">
+  <div class="container stats-grid">
+    <div class="stat"><span class="num" data-count="60" data-suffix="+">60+</span><span class="label">ans d'héritage parfumeur</span></div>
+    <div class="stat"><span class="num" data-count="300" data-suffix="+">300+</span><span class="label">collaborateurs</span></div>
+    <div class="stat"><span class="num" data-count="700" data-suffix="">700</span><span class="label">produits sur le marché</span></div>
+    <div class="stat"><span class="num" data-count="30000" data-suffix=" m²">30 000 m²</span><span class="label">de sites de production</span></div>
+    <div class="stat"><span class="num" data-count="7" data-suffix="+">7+</span><span class="label">pays d'export</span></div>
+  </div>
+</section>
+
+<!-- ================= QUALITY ================= -->
+<section class="section quality" id="savoirfaire">
+  <div class="container quality-grid">
+    <div class="quality-copy reveal">
+      <span class="eyebrow">Qualité &amp; savoir-faire</span>
+      <h2>Chaque produit est contrôlé avant d'arriver chez vous.</h2>
+      <p>Pour garantir la conformité, l'efficacité et la sécurité de nos cosmétiques, chaque lot passe par plusieurs étapes de contrôle avant sa mise sur le marché.</p>
+      <div class="q-list">
+        <div class="q-item">
+          <span class="q-ico">01</span>
+          <div><h3>Contrôles en laboratoire</h3><p>Paramètres physico-chimiques, propriétés organoleptiques et qualité microbiologique.</p></div>
+        </div>
+        <div class="q-item">
+          <span class="q-ico">02</span>
+          <div><h3>Tests de tolérance</h3><p>Analyses de toxicité cutanée, transcutanée et oculaire avant toute commercialisation.</p></div>
+        </div>
+        <div class="q-item">
+          <span class="q-ico">03</span>
+          <div><h3>Emballages fabriqués sur place</h3><p>Notre unité de plasturgie produit nos flacons : soufflage PEHD, PE et PET, injection PP.</p></div>
+        </div>
+      </div>
+    </div>
+    <div class="quality-media reveal">
+      <img src="assets/img/slide-laboratoire.jpg" alt="Formulation d'un soin en laboratoire" loading="lazy">
+      <div class="q-card">
+        <strong>8 800 m²</strong>
+        <span>Nouveau site à Larbâa pour réunir nos unités et moderniser la production.</span>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ================= EXPORT ================= -->
+<section class="export">
+  <div class="container export-grid">
+    <div class="export-copy reveal">
+      <span class="eyebrow eyebrow-light">Présence internationale</span>
+      <h2>Fabriqué en Algérie, apprécié au-delà des frontières.</h2>
+      <p>Distribués partout en Algérie, nos produits sont aussi présents à l'export.</p>
+      <ul class="countries">
+        <li>France</li><li>Côte d'Ivoire</li><li>Jordanie</li><li>Libye</li>
+        <li>Mauritanie</li><li>République du Congo</li><li>Arabie saoudite</li><li>Île Maurice</li>
+      </ul>
+      <a href="contact.html#b2b" class="btn btn-gold">Distribuer nos marques</a>
+    </div>
+    <div class="export-map reveal">
+      <img src="assets/img/carte-export.jpg" alt="Carte des pays d'export de Labo Nedjma" loading="lazy">
+    </div>
+  </div>
+</section>
+
+<!-- ================= MAGAZINE ================= -->
+<section class="section mag">
+  <div class="container">
+    <div class="section-head section-head--row reveal">
+      <div>
+        <span class="eyebrow">Magazine</span>
+        <h2>Conseils beauté &amp; actualités.</h2>
+      </div>
+      <a href="blog.html" class="btn btn-ghost">Tous les articles →</a>
+    </div>
+    <div class="mag-grid">
+      <a href="blog.html" class="post reveal">
+        <div class="post-img"><img src="assets/img/mag-1.jpg" alt="" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-cat">Cheveux</span>
+          <h3>Bien choisir son shampooing selon son type de cheveux</h3>
+          <p>Gras, secs, colorés ou bouclés : les gestes et les gammes adaptés à chaque besoin.</p>
+          <span class="post-more">Lire l'article →</span>
+        </div>
+      </a>
+      <a href="blog.html" class="post reveal">
+        <div class="post-img"><img src="assets/img/mag-2.jpg" alt="" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-cat">Visage</span>
+          <h3>Routine visage : les trois gestes essentiels</h3>
+          <p>Nettoyer, traiter, hydrater : une routine simple pour une peau nette au quotidien.</p>
+          <span class="post-more">Lire l'article →</span>
+        </div>
+      </a>
+      <a href="blog.html" class="post reveal">
+        <div class="post-img"><img src="assets/img/mag-3.jpg" alt="" loading="lazy"></div>
+        <div class="post-body">
+          <span class="post-cat">Flux de Passion</span>
+          <h3>La beauté qui nous ressemble</h3>
+          <p>Solaire, audacieuse et fière : découvrez le nouvel univers de Flux de Passion.</p>
+          <span class="post-more">Lire l'article →</span>
+        </div>
+      </a>
+    </div>
+  </div>
+</section>
+
+<!-- ================= B2B CTA ================= -->
+<section class="section-tight">
+  <div class="container">
+    <div class="cta-b2b reveal">
+      <div>
+        <span class="eyebrow eyebrow-light">Professionnels</span>
+        <h2>Distributeurs, grossistes, export : travaillons ensemble.</h2>
+        <p>Notre équipe commerciale vous accompagne sur toute la chaîne de distribution.</p>
+      </div>
+      <div class="cta-actions">
+        <a href="contact.html#b2b" class="btn btn-gold">Nous contacter</a>
+        <a href="mailto:commercial@labo-nedjma.com" class="btn btn-outline-light">commercial@labo-nedjma.com</a>
+      </div>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<!-- ================= FOOTER ================= -->
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div class="f-brand">
+        <img src="assets/logos/labo-nedjma-blanc.png" alt="Labo Nedjma" width="190">
+        <p>Laboratoires cosmétiques algériens. Formulation, fabrication et conditionnement en Algérie depuis plus de 40 ans.</p>
+        <form class="f-news" data-news>
+          <label for="news">Recevez nos nouveautés</label>
+          <div><input id="news" type="email" placeholder="Votre e-mail" required><button class="btn btn-gold btn-sm" type="submit">OK</button></div>
+        </form>
+      </div>
+      <div class="f-col">
+        <h4>Nos marques</h4>
+        <a href="flux-care.html">Flux Care</a>
+        <a href="flux-care-men.html">Flux Care Men Edition</a>
+        <a href="flux-de-passion.html">Flux de Passion</a>
+        <a href="marques.html">Toutes nos marques</a>
+      </div>
+      <div class="f-col">
+        <h4>Le groupe</h4>
+        <a href="groupe.html">Notre histoire</a>
+        <a href="groupe.html#savoirfaire">Qualité &amp; savoir-faire</a>
+        <a href="carriere.html">Carrière</a>
+        <a href="blog.html">Magazine</a>
+      </div>
+      <div class="f-col">
+        <h4>Contact</h4>
+        <p><strong>Siège</strong><br>4<sup>e</sup> lot, n°11, Douéra, Alger</p>
+        <p><strong>Direction commerciale</strong><br>Zone industrielle d'Oued Smar, Alger</p>
+        <p><a href="tel:+21323920293">+213 23 92 02 93 / 94</a><br><a href="mailto:commercial@labo-nedjma.com">commercial@labo-nedjma.com</a></p>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <span>© 2026 Labo Nedjma — Laboratoires cosmétiques. Tous droits réservés.</span>
+      <div class="socials">
+        <a href="#" aria-label="Instagram"><svg viewBox="0 0 24 24"><rect x="3" y="3" width="18" height="18" rx="5" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="12" cy="12" r="4" fill="none" stroke="currentColor" stroke-width="1.6"/><circle cx="17.5" cy="6.5" r="1" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="Facebook"><svg viewBox="0 0 24 24"><path d="M14 8h3V4h-3a4 4 0 0 0-4 4v3H7v4h3v6h4v-6h3l1-4h-4V8z" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="LinkedIn"><svg viewBox="0 0 24 24"><path d="M5 9h3v11H5zM6.5 4a1.8 1.8 0 1 1 0 3.6 1.8 1.8 0 0 1 0-3.6zM10 9h3v1.6c.5-.9 1.6-1.8 3.3-1.8 3 0 3.7 2 3.7 4.6V20h-3v-5.6c0-1.4 0-3-1.9-3s-2.1 1.4-2.1 2.9V20h-3z" fill="currentColor"/></svg></a>
+        <a href="#" aria-label="TikTok"><svg viewBox="0 0 24 24"><path d="M15 3c.4 2.4 1.9 3.9 4 4.1v3.1a7 7 0 0 1-4-1.3V15a6 6 0 1 1-6-6v3.2A2.8 2.8 0 1 0 12 15V3z" fill="currentColor"/></svg></a>
+      </div>
+      <span>#labonedjma</span>
+    </div>
+  </div>
+</footer>
+
+<script src="script.js"></script>
+</body>
+</html>
