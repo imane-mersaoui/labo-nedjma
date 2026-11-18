@@ -320,3 +320,19 @@ document.addEventListener("DOMContentLoaded", () => {
     });
   }
 });
+
+/* Tiret droit dans les titres serif (le tiret de Cormorant est penché) */
+document.addEventListener("DOMContentLoaded", () => {
+  document.querySelectorAll("h1, h2, h3, h4, .hero-title").forEach(h => {
+    const walker = document.createTreeWalker(h, NodeFilter.SHOW_TEXT);
+    const nodes = []; while (walker.nextNode()) if (walker.currentNode.textContent.includes("-")) nodes.push(walker.currentNode);
+    nodes.forEach(n => {
+      const frag = document.createDocumentFragment();
+      n.textContent.split(/(-)/).forEach(part => {
+        if (part === "-") { const s = document.createElement("span"); s.className = "hy"; s.textContent = "-"; frag.appendChild(s); }
+        else if (part) frag.appendChild(document.createTextNode(part));
+      });
+      n.replaceWith(frag);
+    });
+  });
+});
